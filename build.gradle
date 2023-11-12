@@ -5,6 +5,9 @@ plugins {
 group = 'org.example'
 version = '1.0-SNAPSHOT'
 
+sourceCompatibility = 8;
+targetCompatibility = 8;
+
 repositories {
     mavenCentral()
 }
@@ -21,7 +24,7 @@ dependencies {
 
 jar {
     manifest {
-        attributes "Main-Classes": "org.example.Main"
+        attributes "Main-Class": "org.example.Main"
     }
 
     from {
